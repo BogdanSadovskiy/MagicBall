@@ -1,0 +1,15 @@
+{
+  "buttonText": {
+    "default": "Click to Get Prediction",
+    "spinning": "Spinning..."
+  },
+  "predictions": [
+    "Yes, it is certain.",
+    "No, it is unlikely.",
+    "You may need to wait and see.",
+    "Absolutely!",
+    "Not right now.",
+    "Perhaps in the future.",
+    "Try again later."
+  ]
+}

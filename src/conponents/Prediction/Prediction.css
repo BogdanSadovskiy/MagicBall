@@ -1,0 +1,85 @@
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, +50%) rotate(0deg); 
+  }
+  100% {
+    transform: translate(-50%, +50%) rotate(360deg); 
+  }
+}
+
+.prediction-wheel {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, +50%);
+  border-radius: 50%;
+  background-color: rgba(56, 37, 255, 0.54); 
+  box-shadow: 0 0 20px rgba(0, 38, 255, 0.534); 
+  
+}
+
+
+.circle-button {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #0070cc;
+  color: rgb(255, 255, 255);
+  border: 1px;
+  box-shadow: 0 0 20px rgb(69, 2, 226);
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s;
+}
+
+.circle-button:hover {
+  background-color: #043591;
+  ;
+}
+
+.spin-animation {
+  animation: spin 1.5s ease-out;
+}
+
+.language-buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-buttons button {
+  background-color: rgba(56, 37, 255, 0.54); 
+  color: #333; 
+  font-size: 14px; 
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px; 
+  margin: 10px 1px; 
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.language-buttons button:hover {
+  background-color: #0070cc; 
+  color: #fff; 
+}
+
+.language-buttons button.active {
+  background-color: #0070cc; 
+  color: #fff; 
+}
